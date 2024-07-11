@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import MainNav from '@/components/MainNav.vue'
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
