@@ -6,10 +6,12 @@ export const useTextOutput = () => {
     const isLoading = ref(false)
     const { model } = useAi()
     const submit = async () => {
+        isLoading.value = true
         const result = await model.generateContent(prompt.value);
         const response = await result.response;
         reply.value = response.text();
         prompt.value = ''
+        isLoading.value = false
     }
     return {
         reply,
