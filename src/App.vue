@@ -14,6 +14,6 @@ import { RouterView } from 'vue-router'
 
 <style>
 .router-link-active{
-  color: green;
+  color: blue;
 }
 </style>
